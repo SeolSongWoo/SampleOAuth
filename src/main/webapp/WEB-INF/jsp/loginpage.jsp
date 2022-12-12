@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="true" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,11 +14,15 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/signin.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
   </head>
   <script>
-    $()
+    $(function (){
+      $('#aaaa').click(()=>{
+        });
+    });
   </script>
 
   <body class="text-center">
@@ -31,8 +38,12 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" id="aaaa">Sign in</button>
+      <a href="${APIURL}"><img height="50" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/></a>
+      <div id="naver_id_login"></div>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
+
+  </div>
   </body>
 </html>
