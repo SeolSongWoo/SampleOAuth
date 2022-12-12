@@ -23,10 +23,10 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">${user.name}</h1>
-      <p class="lead">${user.id}</p>
-      <p class="lead">${user.email}</p>
-      <p class="lead">${user.mobile}</p>
+      <h1 class="mt-5">이름 : ${user.name}</h1>
+      <p class="lead">ID : ${user.id}</p>
+      <p class="lead">EMAIL : ${user.email}</p>
+      <p class="lead">PHONE NUMBER : ${user.mobile}</p>
     </main>
 
     <footer class="footer">
